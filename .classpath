@@ -27,5 +27,6 @@
 	<classpathentry kind="lib" path="/Users/jiapeng/checkInterface/libs/commons-logging.jar"/>
 	<classpathentry kind="lib" path="/Users/jiapeng/checkInterface/libs/ezmorph-1.0.3.jar"/>
 	<classpathentry kind="lib" path="/Users/jiapeng/checkInterface/libs/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="/Users/jiapeng/Downloads/commons-collections4-4.3.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
