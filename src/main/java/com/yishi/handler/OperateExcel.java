@@ -7,13 +7,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import net.sf.json.JSONObject;
-
-
-
-
-
-
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
@@ -25,6 +18,8 @@ import com.yishi.util.AnalysisJson;
 import com.yishi.util.CompareMap;
 import com.yishi.util.DataToMap;
 import com.yishi.util.HttpRequest;
+
+import net.sf.json.JSONObject;
 
 public class OperateExcel {
 	XSSFWorkbook workbook;
@@ -74,7 +69,7 @@ public class OperateExcel {
 			
 			try {
 				JSONObject jsonObject = JSONObject.fromObject(requestResult);
-				System.out.println("http接收到转换成JSONObject的值："+jsonObject);
+				System.out.println("http接收到的报文转换成JSONObject的值：" + jsonObject);
 				//将返回值填入excel表中
 				actualValueCell.setCellValue(jsonObject.toString());
 				//比较实际值与期望值是否一致
